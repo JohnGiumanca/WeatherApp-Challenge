@@ -1,0 +1,749 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D6D29481CAD5869001A6B65 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6D29471CAD5869001A6B65 /* Day.swift */; };
+		2D6D294A1CAD58F6001A6B65 /* DayDA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6D29491CAD58F6001A6B65 /* DayDA.swift */; };
+		2D6D294C1CAD61B0001A6B65 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6D294B1CAD61B0001A6B65 /* Fonts.swift */; };
+		2D6D294F1CAD6A0F001A6B65 /* WeekdaysSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6D294E1CAD6A0F001A6B65 /* WeekdaysSelectorView.swift */; };
+		2D6D29511CAD6D56001A6B65 /* TimeField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6D29501CAD6D56001A6B65 /* TimeField.swift */; };
+		2D6D29551CAD9613001A6B65 /* ColoredPlaceholderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6D29541CAD9613001A6B65 /* ColoredPlaceholderTextField.swift */; };
+		2D6D29F11CADA9DB001A6B65 /* Weekdays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6D29F01CADA9DB001A6B65 /* Weekdays.swift */; };
+		2D6D29F81CADB4DD001A6B65 /* AlarmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6D29F71CADB4DD001A6B65 /* AlarmCell.swift */; };
+		2D771B391CAE8FE6006668CF /* ElegantRingtone.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2D771B361CAE8FE6006668CF /* ElegantRingtone.caf */; };
+		2D771B3A1CAE8FE6006668CF /* RisingSun.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2D771B371CAE8FE6006668CF /* RisingSun.caf */; };
+		2D771B3B1CAE8FE6006668CF /* SuperRingtone.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2D771B381CAE8FE6006668CF /* SuperRingtone.caf */; };
+		2D771B3D1CAE9279006668CF /* NowInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D771B3C1CAE9279006668CF /* NowInfoView.swift */; };
+		2D771B3F1CAE9873006668CF /* TodayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D771B3E1CAE9873006668CF /* TodayController.swift */; };
+		2D771B491CAEAED2006668CF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D771B481CAEAED2006668CF /* AVFoundation.framework */; };
+		2D771B4B1CAEB373006668CF /* SpectrumImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D771B4A1CAEB373006668CF /* SpectrumImageView.swift */; };
+		2DD8432D1CAD4ACF00E5778B /* weatherwake.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2DD843281CAD4ACF00E5778B /* weatherwake.xcdatamodeld */; };
+		2DD843321CAD4DC200E5778B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD843311CAD4DC200E5778B /* CoreData.framework */; };
+		2DD843361CAD4FAD00E5778B /* BaseDA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD843341CAD4FAD00E5778B /* BaseDA.swift */; };
+		2DD843381CAD4FEE00E5778B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD843371CAD4FEE00E5778B /* CoreDataManager.swift */; };
+		2DD8433A1CAD504A00E5778B /* AlarmDA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD843391CAD504A00E5778B /* AlarmDA.swift */; };
+		2DD8433E1CAD50A300E5778B /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD8433D1CAD50A300E5778B /* Alarm.swift */; };
+		2DD843421CAD51F900E5778B /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD843411CAD51F900E5778B /* BaseController.swift */; };
+		2DD843441CAD521100E5778B /* AlarmListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD843431CAD521100E5778B /* AlarmListController.swift */; };
+		2DD843461CAD521D00E5778B /* AlarmDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD843451CAD521D00E5778B /* AlarmDetailsController.swift */; };
+		2DD8434D1CAD55AD00E5778B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DD843481CAD55AD00E5778B /* Assets.xcassets */; };
+		2DD8434E1CAD55AD00E5778B /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DD8434A1CAD55AD00E5778B /* Roboto-Light.ttf */; };
+		2DD8434F1CAD55AD00E5778B /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DD8434B1CAD55AD00E5778B /* Roboto-Regular.ttf */; };
+		2DD843501CAD55AD00E5778B /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DD8434C1CAD55AD00E5778B /* Roboto-Thin.ttf */; };
+		2DDDB1321CAD44AF00EAC327 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDDB1311CAD44AF00EAC327 /* AppDelegate.swift */; };
+		2DDDB1371CAD44AF00EAC327 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DDDB1351CAD44AF00EAC327 /* Main.storyboard */; };
+		2DDDB13F1CAD44B000EAC327 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DDDB13D1CAD44B000EAC327 /* LaunchScreen.storyboard */; };
+		58D1A28369117A975FEE817E /* Pods_weatherwake.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A0599B4C335A07E4FAAB9E /* Pods_weatherwake.framework */; };
+		86337B1D20619600008DBFA1 /* TodayViewInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86337B1C20619600008DBFA1 /* TodayViewInfo.swift */; };
+		8C1E9AD21CAE864B00E3DA9F /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E9AD11CAE864B00E3DA9F /* BaseAPI.swift */; };
+		8C1E9AD41CAE86FC00E3DA9F /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E9AD31CAE86FC00E3DA9F /* WeatherAPI.swift */; };
+		8C1E9AD61CAE8A0200E3DA9F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1E9AD51CAE8A0200E3DA9F /* CoreLocation.framework */; };
+		8C1E9AD91CAE8F0A00E3DA9F /* WeatherCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E9AD81CAE8F0A00E3DA9F /* WeatherCondition.swift */; };
+		8C1E9ADB1CAE919800E3DA9F /* WeatherConditionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E9ADA1CAE919800E3DA9F /* WeatherConditionType.swift */; };
+		8C1E9AE01CAF1E7800E3DA9F /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E9ADF1CAF1E7800E3DA9F /* AlertHelper.swift */; };
+		8C1E9AF11CB00C5C00E3DA9F /* AlarmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E9AED1CB00C5C00E3DA9F /* AlarmManager.swift */; };
+		8C1E9AF21CB00C5C00E3DA9F /* NotificationsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E9AEE1CB00C5C00E3DA9F /* NotificationsHandler.swift */; };
+		8C1E9AF31CB00C5C00E3DA9F /* NotificationsScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E9AEF1CB00C5C00E3DA9F /* NotificationsScheduler.swift */; };
+		8C1E9AF41CB00C5C00E3DA9F /* NotificationsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E9AF01CB00C5C00E3DA9F /* NotificationsWrapper.swift */; };
+		8C1E9AF71CB00C6900E3DA9F /* SpeechReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E9AF51CB00C6900E3DA9F /* SpeechReader.swift */; };
+		8C1E9AF81CB00C6900E3DA9F /* WeatherDescriptionGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E9AF61CB00C6900E3DA9F /* WeatherDescriptionGenerator.swift */; };
+		8C1E9AFB1CB00C7800E3DA9F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E9AF91CB00C7800E3DA9F /* LocationManager.swift */; };
+		8C1E9AFC1CB00C7800E3DA9F /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E9AFA1CB00C7800E3DA9F /* NavigationManager.swift */; };
+		8C1E9AFF1CB00C8500E3DA9F /* DateConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E9AFD1CB00C8500E3DA9F /* DateConverter.swift */; };
+		8C1E9B001CB00C8500E3DA9F /* DayConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E9AFE1CB00C8500E3DA9F /* DayConverter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		165A64313D95728CE5858B57 /* Pods-weatherwake.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weatherwake.debug.xcconfig"; path = "Pods/Target Support Files/Pods-weatherwake/Pods-weatherwake.debug.xcconfig"; sourceTree = "<group>"; };
+		2D6D29471CAD5869001A6B65 /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		2D6D29491CAD58F6001A6B65 /* DayDA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayDA.swift; sourceTree = "<group>"; };
+		2D6D294B1CAD61B0001A6B65 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		2D6D294E1CAD6A0F001A6B65 /* WeekdaysSelectorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekdaysSelectorView.swift; sourceTree = "<group>"; };
+		2D6D29501CAD6D56001A6B65 /* TimeField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeField.swift; sourceTree = "<group>"; };
+		2D6D29541CAD9613001A6B65 /* ColoredPlaceholderTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColoredPlaceholderTextField.swift; sourceTree = "<group>"; };
+		2D6D29F01CADA9DB001A6B65 /* Weekdays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weekdays.swift; sourceTree = "<group>"; };
+		2D6D29F71CADB4DD001A6B65 /* AlarmCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmCell.swift; sourceTree = "<group>"; };
+		2D771B361CAE8FE6006668CF /* ElegantRingtone.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ElegantRingtone.caf; sourceTree = "<group>"; };
+		2D771B371CAE8FE6006668CF /* RisingSun.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = RisingSun.caf; sourceTree = "<group>"; };
+		2D771B381CAE8FE6006668CF /* SuperRingtone.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SuperRingtone.caf; sourceTree = "<group>"; };
+		2D771B3C1CAE9279006668CF /* NowInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowInfoView.swift; sourceTree = "<group>"; };
+		2D771B3E1CAE9873006668CF /* TodayController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayController.swift; sourceTree = "<group>"; };
+		2D771B481CAEAED2006668CF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2D771B4A1CAEB373006668CF /* SpectrumImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpectrumImageView.swift; sourceTree = "<group>"; };
+		2DD843291CAD4ACF00E5778B /* weatherwake.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = weatherwake.xcdatamodel; sourceTree = "<group>"; };
+		2DD843311CAD4DC200E5778B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2DD843341CAD4FAD00E5778B /* BaseDA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseDA.swift; sourceTree = "<group>"; };
+		2DD843371CAD4FEE00E5778B /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		2DD843391CAD504A00E5778B /* AlarmDA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmDA.swift; sourceTree = "<group>"; };
+		2DD8433D1CAD50A300E5778B /* Alarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		2DD843411CAD51F900E5778B /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		2DD843431CAD521100E5778B /* AlarmListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmListController.swift; sourceTree = "<group>"; };
+		2DD843451CAD521D00E5778B /* AlarmDetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmDetailsController.swift; sourceTree = "<group>"; };
+		2DD843481CAD55AD00E5778B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2DD8434A1CAD55AD00E5778B /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		2DD8434B1CAD55AD00E5778B /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		2DD8434C1CAD55AD00E5778B /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		2DDDB12E1CAD44AF00EAC327 /* weatherwake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weatherwake.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DDDB1311CAD44AF00EAC327 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2DDDB1361CAD44AF00EAC327 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2DDDB13E1CAD44B000EAC327 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2DDDB1401CAD44B000EAC327 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4192736362DE277EC948CE64 /* Pods-weatherwake.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weatherwake.release.xcconfig"; path = "Pods/Target Support Files/Pods-weatherwake/Pods-weatherwake.release.xcconfig"; sourceTree = "<group>"; };
+		64A0599B4C335A07E4FAAB9E /* Pods_weatherwake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weatherwake.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86337B1C20619600008DBFA1 /* TodayViewInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewInfo.swift; sourceTree = "<group>"; };
+		8C1E9AD11CAE864B00E3DA9F /* BaseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		8C1E9AD31CAE86FC00E3DA9F /* WeatherAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
+		8C1E9AD51CAE8A0200E3DA9F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8C1E9AD81CAE8F0A00E3DA9F /* WeatherCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherCondition.swift; sourceTree = "<group>"; };
+		8C1E9ADA1CAE919800E3DA9F /* WeatherConditionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherConditionType.swift; sourceTree = "<group>"; };
+		8C1E9ADF1CAF1E7800E3DA9F /* AlertHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
+		8C1E9AED1CB00C5C00E3DA9F /* AlarmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmManager.swift; sourceTree = "<group>"; };
+		8C1E9AEE1CB00C5C00E3DA9F /* NotificationsHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsHandler.swift; sourceTree = "<group>"; };
+		8C1E9AEF1CB00C5C00E3DA9F /* NotificationsScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsScheduler.swift; sourceTree = "<group>"; };
+		8C1E9AF01CB00C5C00E3DA9F /* NotificationsWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsWrapper.swift; sourceTree = "<group>"; };
+		8C1E9AF51CB00C6900E3DA9F /* SpeechReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechReader.swift; sourceTree = "<group>"; };
+		8C1E9AF61CB00C6900E3DA9F /* WeatherDescriptionGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDescriptionGenerator.swift; sourceTree = "<group>"; };
+		8C1E9AF91CB00C7800E3DA9F /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		8C1E9AFA1CB00C7800E3DA9F /* NavigationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
+		8C1E9AFD1CB00C8500E3DA9F /* DateConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateConverter.swift; sourceTree = "<group>"; };
+		8C1E9AFE1CB00C8500E3DA9F /* DayConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayConverter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2DDDB12B1CAD44AF00EAC327 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D771B491CAEAED2006668CF /* AVFoundation.framework in Frameworks */,
+				8C1E9AD61CAE8A0200E3DA9F /* CoreLocation.framework in Frameworks */,
+				2DD843321CAD4DC200E5778B /* CoreData.framework in Frameworks */,
+				58D1A28369117A975FEE817E /* Pods_weatherwake.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EF84B160A33B88B7230859D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D771B481CAEAED2006668CF /* AVFoundation.framework */,
+				8C1E9AD51CAE8A0200E3DA9F /* CoreLocation.framework */,
+				2DD843311CAD4DC200E5778B /* CoreData.framework */,
+				64A0599B4C335A07E4FAAB9E /* Pods_weatherwake.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D6D294D1CAD69F3001A6B65 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2DDDB13D1CAD44B000EAC327 /* LaunchScreen.storyboard */,
+				2DDDB1351CAD44AF00EAC327 /* Main.storyboard */,
+				2D6D294E1CAD6A0F001A6B65 /* WeekdaysSelectorView.swift */,
+				2D6D29501CAD6D56001A6B65 /* TimeField.swift */,
+				2D6D29541CAD9613001A6B65 /* ColoredPlaceholderTextField.swift */,
+				2D771B3C1CAE9279006668CF /* NowInfoView.swift */,
+				2D771B4A1CAEB373006668CF /* SpectrumImageView.swift */,
+				86337B1C20619600008DBFA1 /* TodayViewInfo.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2D6D29EF1CADA9C5001A6B65 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				2D6D29F01CADA9DB001A6B65 /* Weekdays.swift */,
+				8C1E9ADA1CAE919800E3DA9F /* WeatherConditionType.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		2D6D29F41CADB4CA001A6B65 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2D6D29F61CADB4CA001A6B65 /* TableView */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2D6D29F61CADB4CA001A6B65 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				2D6D29F71CADB4DD001A6B65 /* AlarmCell.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		2D771B351CAE8FE6006668CF /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				2D771B361CAE8FE6006668CF /* ElegantRingtone.caf */,
+				2D771B371CAE8FE6006668CF /* RisingSun.caf */,
+				2D771B381CAE8FE6006668CF /* SuperRingtone.caf */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		2DD843261CAD4ACF00E5778B /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				2DD843371CAD4FEE00E5778B /* CoreDataManager.swift */,
+				2DD843271CAD4ACF00E5778B /* DataAccess */,
+				2DD843281CAD4ACF00E5778B /* weatherwake.xcdatamodeld */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		2DD843271CAD4ACF00E5778B /* DataAccess */ = {
+			isa = PBXGroup;
+			children = (
+				2DD843341CAD4FAD00E5778B /* BaseDA.swift */,
+				2DD843391CAD504A00E5778B /* AlarmDA.swift */,
+				2D6D29491CAD58F6001A6B65 /* DayDA.swift */,
+			);
+			path = DataAccess;
+			sourceTree = "<group>";
+		};
+		2DD8432A1CAD4ACF00E5778B /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				8C1E9AD71CAE8CCA00E3DA9F /* Models */,
+				2D6D29EF1CADA9C5001A6B65 /* Enums */,
+				2DD8432B1CAD4ACF00E5778B /* CoreData */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		2DD8432B1CAD4ACF00E5778B /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				2DD8433D1CAD50A300E5778B /* Alarm.swift */,
+				2D6D29471CAD5869001A6B65 /* Day.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		2DD8432C1CAD4ACF00E5778B /* Webservices */ = {
+			isa = PBXGroup;
+			children = (
+				8C1E9AD11CAE864B00E3DA9F /* BaseAPI.swift */,
+				8C1E9AD31CAE86FC00E3DA9F /* WeatherAPI.swift */,
+			);
+			path = Webservices;
+			sourceTree = "<group>";
+		};
+		2DD8433F1CAD51E600E5778B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2DD843401CAD51E600E5778B /* Base */,
+				2DD843431CAD521100E5778B /* AlarmListController.swift */,
+				2DD843451CAD521D00E5778B /* AlarmDetailsController.swift */,
+				2D771B3E1CAE9873006668CF /* TodayController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2DD843401CAD51E600E5778B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				2DD843411CAD51F900E5778B /* BaseController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		2DD843471CAD55AD00E5778B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2DD843481CAD55AD00E5778B /* Assets.xcassets */,
+				2DD843491CAD55AD00E5778B /* Font */,
+				2D771B351CAE8FE6006668CF /* Sounds */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2DD843491CAD55AD00E5778B /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				2DD8434A1CAD55AD00E5778B /* Roboto-Light.ttf */,
+				2DD8434B1CAD55AD00E5778B /* Roboto-Regular.ttf */,
+				2DD8434C1CAD55AD00E5778B /* Roboto-Thin.ttf */,
+				2D6D294B1CAD61B0001A6B65 /* Fonts.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		2DDDB1251CAD44AF00EAC327 = {
+			isa = PBXGroup;
+			children = (
+				2DDDB1301CAD44AF00EAC327 /* weatherwake */,
+				2DDDB12F1CAD44AF00EAC327 /* Products */,
+				1EF84B160A33B88B7230859D /* Frameworks */,
+				3BF3366D2CC0747E509F6E44 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		2DDDB12F1CAD44AF00EAC327 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DDDB12E1CAD44AF00EAC327 /* weatherwake.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DDDB1301CAD44AF00EAC327 /* weatherwake */ = {
+			isa = PBXGroup;
+			children = (
+				2DDDB1311CAD44AF00EAC327 /* AppDelegate.swift */,
+				2DDDB1401CAD44B000EAC327 /* Info.plist */,
+				8C1E9AEC1CB00C0400E3DA9F /* DataConverters */,
+				8C1E9AEB1CB00BFF00E3DA9F /* Managers */,
+				8C1E9AEA1CB00BFC00E3DA9F /* TTS */,
+				8C1E9AE91CB00BF700E3DA9F /* Alarms */,
+				8C1E9ADE1CAF1E4400E3DA9F /* Helpers */,
+				2D6D29F41CADB4CA001A6B65 /* Cells */,
+				2DD8433F1CAD51E600E5778B /* Controllers */,
+				2DD843261CAD4ACF00E5778B /* Database */,
+				2DD8432A1CAD4ACF00E5778B /* DataModels */,
+				2DD843471CAD55AD00E5778B /* Resources */,
+				2D6D294D1CAD69F3001A6B65 /* Views */,
+				2DD8432C1CAD4ACF00E5778B /* Webservices */,
+			);
+			path = weatherwake;
+			sourceTree = "<group>";
+		};
+		3BF3366D2CC0747E509F6E44 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				165A64313D95728CE5858B57 /* Pods-weatherwake.debug.xcconfig */,
+				4192736362DE277EC948CE64 /* Pods-weatherwake.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8C1E9AD71CAE8CCA00E3DA9F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8C1E9AD81CAE8F0A00E3DA9F /* WeatherCondition.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8C1E9ADE1CAF1E4400E3DA9F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8C1E9ADF1CAF1E7800E3DA9F /* AlertHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8C1E9AE91CB00BF700E3DA9F /* Alarms */ = {
+			isa = PBXGroup;
+			children = (
+				8C1E9AED1CB00C5C00E3DA9F /* AlarmManager.swift */,
+				8C1E9AEE1CB00C5C00E3DA9F /* NotificationsHandler.swift */,
+				8C1E9AEF1CB00C5C00E3DA9F /* NotificationsScheduler.swift */,
+				8C1E9AF01CB00C5C00E3DA9F /* NotificationsWrapper.swift */,
+			);
+			path = Alarms;
+			sourceTree = "<group>";
+		};
+		8C1E9AEA1CB00BFC00E3DA9F /* TTS */ = {
+			isa = PBXGroup;
+			children = (
+				8C1E9AF51CB00C6900E3DA9F /* SpeechReader.swift */,
+				8C1E9AF61CB00C6900E3DA9F /* WeatherDescriptionGenerator.swift */,
+			);
+			path = TTS;
+			sourceTree = "<group>";
+		};
+		8C1E9AEB1CB00BFF00E3DA9F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				8C1E9AF91CB00C7800E3DA9F /* LocationManager.swift */,
+				8C1E9AFA1CB00C7800E3DA9F /* NavigationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		8C1E9AEC1CB00C0400E3DA9F /* DataConverters */ = {
+			isa = PBXGroup;
+			children = (
+				8C1E9AFD1CB00C8500E3DA9F /* DateConverter.swift */,
+				8C1E9AFE1CB00C8500E3DA9F /* DayConverter.swift */,
+			);
+			path = DataConverters;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2DDDB12D1CAD44AF00EAC327 /* weatherwake */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DDDB1431CAD44B000EAC327 /* Build configuration list for PBXNativeTarget "weatherwake" */;
+			buildPhases = (
+				4E5A1D1CB369F2EB161EC3D2 /* [CP] Check Pods Manifest.lock */,
+				2DDDB12A1CAD44AF00EAC327 /* Sources */,
+				2DDDB12B1CAD44AF00EAC327 /* Frameworks */,
+				2DDDB12C1CAD44AF00EAC327 /* Resources */,
+				5563D9CFAC0BCD24C96B3172 /* [CP] Embed Pods Frameworks */,
+				9324A4E076840BDD45F50A26 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = weatherwake;
+			productName = weatherwake;
+			productReference = 2DDDB12E1CAD44AF00EAC327 /* weatherwake.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2DDDB1261CAD44AF00EAC327 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = mready;
+				TargetAttributes = {
+					2DDDB12D1CAD44AF00EAC327 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = U2329EW9VW;
+						LastSwiftMigration = 0920;
+					};
+				};
+			};
+			buildConfigurationList = 2DDDB1291CAD44AF00EAC327 /* Build configuration list for PBXProject "weatherwake" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2DDDB1251CAD44AF00EAC327;
+			productRefGroup = 2DDDB12F1CAD44AF00EAC327 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2DDDB12D1CAD44AF00EAC327 /* weatherwake */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2DDDB12C1CAD44AF00EAC327 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DDDB13F1CAD44B000EAC327 /* LaunchScreen.storyboard in Resources */,
+				2DD8434D1CAD55AD00E5778B /* Assets.xcassets in Resources */,
+				2DD843501CAD55AD00E5778B /* Roboto-Thin.ttf in Resources */,
+				2DD8434F1CAD55AD00E5778B /* Roboto-Regular.ttf in Resources */,
+				2DD8434E1CAD55AD00E5778B /* Roboto-Light.ttf in Resources */,
+				2D771B3B1CAE8FE6006668CF /* SuperRingtone.caf in Resources */,
+				2DDDB1371CAD44AF00EAC327 /* Main.storyboard in Resources */,
+				2D771B391CAE8FE6006668CF /* ElegantRingtone.caf in Resources */,
+				2D771B3A1CAE8FE6006668CF /* RisingSun.caf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4E5A1D1CB369F2EB161EC3D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-weatherwake-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5563D9CFAC0BCD24C96B3172 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-weatherwake/Pods-weatherwake-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-weatherwake/Pods-weatherwake-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9324A4E076840BDD45F50A26 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-weatherwake/Pods-weatherwake-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2DDDB12A1CAD44AF00EAC327 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DD843461CAD521D00E5778B /* AlarmDetailsController.swift in Sources */,
+				8C1E9AF21CB00C5C00E3DA9F /* NotificationsHandler.swift in Sources */,
+				86337B1D20619600008DBFA1 /* TodayViewInfo.swift in Sources */,
+				2DD8432D1CAD4ACF00E5778B /* weatherwake.xcdatamodeld in Sources */,
+				8C1E9B001CB00C8500E3DA9F /* DayConverter.swift in Sources */,
+				2D6D294A1CAD58F6001A6B65 /* DayDA.swift in Sources */,
+				2D6D29511CAD6D56001A6B65 /* TimeField.swift in Sources */,
+				8C1E9AF81CB00C6900E3DA9F /* WeatherDescriptionGenerator.swift in Sources */,
+				2D6D29F11CADA9DB001A6B65 /* Weekdays.swift in Sources */,
+				8C1E9AD21CAE864B00E3DA9F /* BaseAPI.swift in Sources */,
+				8C1E9AF41CB00C5C00E3DA9F /* NotificationsWrapper.swift in Sources */,
+				2D6D29551CAD9613001A6B65 /* ColoredPlaceholderTextField.swift in Sources */,
+				8C1E9AFC1CB00C7800E3DA9F /* NavigationManager.swift in Sources */,
+				2D771B3F1CAE9873006668CF /* TodayController.swift in Sources */,
+				2D771B4B1CAEB373006668CF /* SpectrumImageView.swift in Sources */,
+				8C1E9AFF1CB00C8500E3DA9F /* DateConverter.swift in Sources */,
+				2DD843441CAD521100E5778B /* AlarmListController.swift in Sources */,
+				8C1E9AFB1CB00C7800E3DA9F /* LocationManager.swift in Sources */,
+				8C1E9AD41CAE86FC00E3DA9F /* WeatherAPI.swift in Sources */,
+				8C1E9AD91CAE8F0A00E3DA9F /* WeatherCondition.swift in Sources */,
+				2D6D294C1CAD61B0001A6B65 /* Fonts.swift in Sources */,
+				8C1E9ADB1CAE919800E3DA9F /* WeatherConditionType.swift in Sources */,
+				2DDDB1321CAD44AF00EAC327 /* AppDelegate.swift in Sources */,
+				8C1E9AE01CAF1E7800E3DA9F /* AlertHelper.swift in Sources */,
+				2DD843421CAD51F900E5778B /* BaseController.swift in Sources */,
+				2DD8433A1CAD504A00E5778B /* AlarmDA.swift in Sources */,
+				2DD843381CAD4FEE00E5778B /* CoreDataManager.swift in Sources */,
+				2D6D29F81CADB4DD001A6B65 /* AlarmCell.swift in Sources */,
+				2D6D294F1CAD6A0F001A6B65 /* WeekdaysSelectorView.swift in Sources */,
+				8C1E9AF71CB00C6900E3DA9F /* SpeechReader.swift in Sources */,
+				2DD843361CAD4FAD00E5778B /* BaseDA.swift in Sources */,
+				8C1E9AF31CB00C5C00E3DA9F /* NotificationsScheduler.swift in Sources */,
+				2D6D29481CAD5869001A6B65 /* Day.swift in Sources */,
+				2DD8433E1CAD50A300E5778B /* Alarm.swift in Sources */,
+				2D771B3D1CAE9279006668CF /* NowInfoView.swift in Sources */,
+				8C1E9AF11CB00C5C00E3DA9F /* AlarmManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2DDDB1351CAD44AF00EAC327 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DDDB1361CAD44AF00EAC327 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		2DDDB13D1CAD44B000EAC327 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DDDB13E1CAD44B000EAC327 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2DDDB1411CAD44B000EAC327 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2DDDB1421CAD44B000EAC327 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2DDDB1441CAD44B000EAC327 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 165A64313D95728CE5858B57 /* Pods-weatherwake.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U2329EW9VW;
+				INFOPLIST_FILE = weatherwake/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.mready.weatherwake;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		2DDDB1451CAD44B000EAC327 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4192736362DE277EC948CE64 /* Pods-weatherwake.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U2329EW9VW;
+				INFOPLIST_FILE = weatherwake/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.mready.weatherwake;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2DDDB1291CAD44AF00EAC327 /* Build configuration list for PBXProject "weatherwake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DDDB1411CAD44B000EAC327 /* Debug */,
+				2DDDB1421CAD44B000EAC327 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DDDB1431CAD44B000EAC327 /* Build configuration list for PBXNativeTarget "weatherwake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DDDB1441CAD44B000EAC327 /* Debug */,
+				2DDDB1451CAD44B000EAC327 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2DD843281CAD4ACF00E5778B /* weatherwake.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2DD843291CAD4ACF00E5778B /* weatherwake.xcdatamodel */,
+			);
+			currentVersion = 2DD843291CAD4ACF00E5778B /* weatherwake.xcdatamodel */;
+			path = weatherwake.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2DDDB1261CAD44AF00EAC327 /* Project object */;
+}
